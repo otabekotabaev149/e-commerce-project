@@ -1,0 +1,76 @@
+E-Commerce Backend Project
+Overview
+This project is a backend implementation of an e-commerce shopping application using JavaEE. It provides functionalities for user authentication,
+product management, and order processing. The application is built using JSP, Servlets, and MySQL for data storage. JWT is used for authorization,
+ensuring secure access to the system.
+
+Features
+    User Authentication: Sign in and Sign up functionalities with JWT for secure authorization.
+    Product Management: Adding, updating, and removing products from the catalog.
+    Cart Management: Adding items to the cart, updating item quantities, and removing items.
+    Order Management: Placing orders, canceling orders, and checking out.
+Technologies Used
+    JavaEE: Core framework for building the application.
+    JSP and Servlets: For handling HTTP requests and responses.
+    MySQL: Database for storing user, product, and order information.
+    JWT: For secure authorization.
+    HTML, CSS, JS: For creating the user interface.
+Project Structure
+Model Classes
+    Cart: Represents a shopping cart.
+    Order: Represents an order placed by a user.
+    Product: Represents a product available in the store.
+    User: Represents a user in the system.
+Data Access Object (DAO) Layer
+    OrderDao: Handles database operations related to orders.
+    ProductDao: Handles database operations related to products.
+    UserDao: Handles database operations related to users.
+Servlets
+    AddToCartServlet: Adds a product to the shopping cart.
+    CancelOrderServlet: Cancels an existing order.
+    CheckoutServlet: Handles the checkout process.
+    OrderNowServlet: Places an order directly.
+    QuantityIncDecServlet: Increases or decreases the quantity of an item in the cart.
+    RemoveFromCartServlet: Removes an item from the cart.
+User Interface
+    HTML/CSS/JS: Provides the front-end for user interactions.
+Setup Instructions
+Prerequisites
+    Java Development Kit (JDK) 8 or higher
+    Apache Tomcat or any other compatible servlet container
+    MySQL Database
+Installation
+Clone the repository
+    sh
+    Copy code
+    git clone https://github.com/yourusername/ecommerce-backend.git
+    cd ecommerce-backend
+Set up the database
+
+Create a new MySQL database.
+Run the provided SQL scripts to create the necessary tables.
+Configure the application
+
+Update the database connection details in the project configuration files.
+Deploy to a servlet container
+
+Package the application as a WAR file and deploy it to your servlet container (e.g., Apache Tomcat).
+Run the application
+
+Start your servlet container and access the application through your browser.
+Usage
+    Sign Up: Create a new user account.
+    Sign In: Log in with your credentials.
+    Browse Products: View the list of available products.
+    Add to Cart: Add desired products to your shopping cart.
+    Update Cart: Increase or decrease the quantity of items in your cart.
+    Remove from Cart: Remove items from your cart.
+    Checkout: Proceed to checkout and place your order.
+    Order Now: Directly place an order for a product.
+    Cancel Order: Cancel an order that you have placed.
+Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure that your code follows the project's coding
+standards and includes appropriate tests.
+
+Contact
+For any inquiries or issues, please contact otaboyev149@gmail.com
